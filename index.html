@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Private Page</title>
+<title>Private Photos</title>
 </head>
 
 <body style="text-align:center;font-family:sans-serif">
@@ -13,19 +14,29 @@
 
 <div id="content" style="display:none">
 
-<h2>Secret Photo</h2>
-<img src="IMG20200630.jpg" width="300">
+<h2>My Photos</h2>
+
+<img src="photo1.jpg" width="300"><br><br>
+<img src="photo2.jpg" width="300"><br><br>
+<img src="photo3.jpg" width="300"><br><br>
+<img src="photo4.jpg" width="300"><br><br>
+<img src="photo5.jpg" width="300"><br><br>
+<img src="photo6.jpg" width="300"><br><br>
+<img src="photo7.jpg" width="300"><br><br>
+
 </div>
 
 <script>
 
 function check(){
-var p = document.getElementById("pass").value;
+
+var p=document.getElementById("pass").value;
 
 if(p=="1234"){
 document.getElementById("content").style.display="block";
-}else{
-alert("Wrong Password");
+}
+else{
+alert("Wrong password");
 }
 
 }
